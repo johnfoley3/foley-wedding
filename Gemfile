@@ -38,6 +38,10 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'rspec-rails' # Testing Framework
+  gem 'capybara' # Feature Testing
+  gem 'poltergeist' # Headless test runner
+  gem 'pry' # Debugging
 end
 
 group :development do
