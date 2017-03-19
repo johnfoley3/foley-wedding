@@ -1,0 +1,33 @@
+<h1>RSVPs</h1>
+<div class="container">
+    <div class=row>
+        <div class="col-4">
+            Full Name
+        </div>
+        <div class="col-2">
+            Is Coming
+        </div>
+        <div class="col-2">
+            Has Plus One
+        </div>
+        <div class="col-4">
+            Plus One Full Name
+        </div>
+    </div>
+    <% @rsvps.each do |rsvp| %>
+        <div class="row">
+            <div class="col-4">
+                <%= rsvp.full_name %>
+            </div>
+            <div class="col-2">
+                <%= rsvp.is_coming %>
+            </div>
+            <div class="col-2">
+                <%= rsvp.has_plus_one %>
+            </div>
+            <div class="col-4">
+                <%= rsvp.plus_one_full_name %>
+            </div>
+        </div>
+    <% end %>
+</div>

@@ -1,3 +1,30 @@
-<section>
-<h1>RSVP</h1>
+<section class="container">
+    <h1>RSVP</h1>
+    <%= form_for @rsvp do |f| %>
+        <div class="form-group row">
+            <%= f.label :full_name, class: 'col-2 col-form-label' %>
+            <div class="col-10">
+                <%= f.text_field :full_name, class: 'form-control' %>
+            </div>
+        </div>
+        <div class="form-group row">
+            <%= f.label :is_coming, class: 'col-2 col-form-label' %>
+            <div class="col-10">
+                <%= f.check_box :is_coming, class: 'form-check' %>
+            </div>
+        </div>
+        <div class="form-group row">
+            <%= f.label :has_plus_one, class: 'col-2 col-form-label' %>
+            <div class="col-10">
+                <%= f.check_box :has_plus_one, class: 'form-check' %>
+            </div>
+        </div>
+        <div class="form-group row">
+            <%= f.label :plus_one_full_name, class: 'col-2 col-form-label' %>
+            <div class="col-10">
+                <%= f.text_field :plus_one_full_name, class: 'form-control' %>
+            </div>
+        </div>
+        <%= f.submit %>
+    <% end %>
 </section>
