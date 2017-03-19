@@ -7,18 +7,26 @@
                 <%= f.text_field :full_name, class: 'form-control' %>
             </div>
         </div>
-        <div class="form-group row">
-            <%= f.label :is_coming, class: 'col-2 col-form-label' %>
-            <div class="col-10">
-                <%= f.check_box :is_coming, class: 'form-check' %>
-            </div>
-        </div>
-        <div class="form-group row">
-            <%= f.label :has_plus_one, class: 'col-2 col-form-label' %>
-            <div class="col-10">
-                <%= f.check_box :has_plus_one, class: 'form-check' %>
-            </div>
-        </div>
+        <fieldset class="form-group row">
+            <label class="form-check-label">
+                <%= f.radio_button :is_coming, true, checked: true %>
+                Will be there!
+            </label>
+            <label class="form-check-label">
+                <%= f.radio_button :is_coming, false %>
+                Can't make it
+            </label>
+        </fieldset>
+        <fieldset class="form-group row">
+            <label class="form-check-label">
+                <%= f.radio_button :has_plus_one, true, checked: true %>
+                I will be bringing someone
+            </label>
+            <label class="form-check-label">
+                <%= f.radio_button :has_plus_one, false %>
+                Goin' solo
+            </label>
+        </fieldset>
         <div class="form-group row">
             <%= f.label :plus_one_full_name, class: 'col-2 col-form-label' %>
             <div class="col-10">
