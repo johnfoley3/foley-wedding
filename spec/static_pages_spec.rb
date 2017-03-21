@@ -7,3 +7,10 @@ feature 'Home Page works' do
 
   it_behaves_like 'Nav bar page can be visited'
 end
+
+feature 'Our Story Page works' do
+  let(:visit_page) { visit our_story_path }
+  let(:active_nav_text) { 'Our Story' }
+
+  it_behaves_like 'Nav bar page can be visited'
+end

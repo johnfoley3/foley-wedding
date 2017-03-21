@@ -1,10 +1,13 @@
 <nav>
     <ul class="nav nav-pills justify-content-center">
         <li class="nav-item">
-            <%= link_to "Home", root_path, class: class_string("nav-link": true, "active": current_page?(root_path)) %>
+            <%= link_to "Home", root_path, class: nav_classes_for(root_path) %>
         </li>
         <li class="nav-item">
-            <%= link_to "RSVP", rsvp_new_path, class: class_string("nav-link": true, "active": current_page?(rsvp_new_path))%>
+            <%= link_to "RSVP", rsvp_new_path, class: nav_classes_for(rsvp_new_path)%>
+        </li>
+        <li class="nav-item">
+            <%= link_to "Our Story", our_story_path, class: nav_classes_for(our_story_path) %>
         </li>
     </ul>
 </nav>
