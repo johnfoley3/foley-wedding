@@ -14,3 +14,10 @@ feature 'Our Story Page works' do
 
   it_behaves_like 'Nav bar page can be visited'
 end
+
+feature 'Details Page works' do
+  let(:visit_page) { visit details_path }
+  let(:active_nav_text) { 'Details' }
+
+  it_behaves_like 'Nav bar page can be visited'
+end

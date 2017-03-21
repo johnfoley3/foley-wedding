@@ -4,4 +4,7 @@ class StaticController < ApplicationController
 
   def our_story
   end
+
+  def details
+  end
 end

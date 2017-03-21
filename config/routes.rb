@@ -8,4 +8,7 @@ Rails.application.routes.draw do
 
   # our story
   get '/our-story', to: 'static#our_story'
+
+  # details
+  get '/details', to: 'static#details'
 end
