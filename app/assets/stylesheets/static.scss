@@ -11,3 +11,9 @@ html, body {
     background-size: 100% 100%;
     margin: 0 10vw;
 }
+
+@media only screen and (max-device-width: 480px) {
+    .home-splash {
+        height: 400px;
+    }
+}
