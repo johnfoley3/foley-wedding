@@ -21,3 +21,10 @@ feature 'Details Page works' do
 
   it_behaves_like 'Nav bar page can be visited'
 end
+
+feature 'Registry Page works' do
+  let(:visit_page) { visit registry_path }
+  let(:active_nav_text) { 'Registry' }
+
+  it_behaves_like 'Nav bar page can be visited'
+end

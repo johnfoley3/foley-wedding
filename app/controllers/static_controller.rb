@@ -7,4 +7,7 @@ class StaticController < ApplicationController
 
   def details
   end
+
+  def registry
+  end
 end

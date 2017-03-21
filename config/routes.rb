@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   # details
   get '/details', to: 'static#details'
+
+  # registry
+  get '/registry', to: 'static#registry'
 end
