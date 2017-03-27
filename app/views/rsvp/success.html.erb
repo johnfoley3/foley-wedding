@@ -1,1 +1,5 @@
-<h3>We'll see you there!</h3>
+<% if @rsvp.is_coming %>
+    <h3>We'll see you there!</h3>
+<% else %>
+    <h3>Thank you for letting us know!</h3>
+<% end %>
